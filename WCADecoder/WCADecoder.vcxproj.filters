@@ -129,6 +129,9 @@
     <ClInclude Include="WICA\wav_codec\wci_wavelet.h">
       <Filter>Source Files\WICA</Filter>
     </ClInclude>
+    <ClInclude Include="spng.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WCADecoder.cpp">
@@ -238,6 +241,9 @@
     </ClCompile>
     <ClCompile Include="WICA\wav_codec\wci_wavelet.c">
       <Filter>Source Files\WICA</Filter>
+    </ClCompile>
+    <ClCompile Include="spng.c">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
