@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{775e4d90-2430-4b9e-adcf-37e45e79ac95}</ProjectGuid>
+    <RootNamespace>WCADecoder</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;ARCH_IS_32BIT;ARCH_IS_IA32;ENCODER_SUPPORT;_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="msf_gif.h" />
+    <ClInclude Include="WICA\compress\wci_huff_compress.h" />
+    <ClInclude Include="WICA\compress\wci_huff_decompress.h" />
+    <ClInclude Include="WICA\compress\wci_huff_tabs.h" />
+    <ClInclude Include="WICA\compress\wci_qsp.h" />
+    <ClInclude Include="WICA\compress\wci_qsp_compress.h" />
+    <ClInclude Include="WICA\compress\wci_qsp_header.h" />
+    <ClInclude Include="WICA\compress\wci_qsp_stripe_decompress.h" />
+    <ClInclude Include="WICA\compress\wci_rle.h" />
+    <ClInclude Include="WICA\compress\wci_vlc.h" />
+    <ClInclude Include="WICA\debug_utils.h" />
+    <ClInclude Include="WICA\image\wci_color_space_in.h" />
+    <ClInclude Include="WICA\image\wci_color_space_out.h" />
+    <ClInclude Include="WICA\image\wci_color_space_table.h" />
+    <ClInclude Include="WICA\image\wci_image.h" />
+    <ClInclude Include="WICA\image\wci_image_component.h" />
+    <ClInclude Include="WICA\image\wci_image_convert.h" />
+    <ClInclude Include="WICA\utils\wci_emms.h" />
+    <ClInclude Include="WICA\utils\wci_mem_align.h" />
+    <ClInclude Include="WICA\wav_codec\wci_adpcm.h" />
+    <ClInclude Include="WICA\wav_codec\wci_lpc.h" />
+    <ClInclude Include="WICA\wav_codec\wci_wavelet.h" />
+    <ClInclude Include="WICA\wav_codec\wci_wav_block_quant.h" />
+    <ClInclude Include="WICA\wav_codec\wci_wav_codec.h" />
+    <ClInclude Include="WICA\wav_codec\wci_wav_layer.h" />
+    <ClInclude Include="WICA\wav_codec\wci_wav_quant.h" />
+    <ClInclude Include="WICA\wav_codec\wci_wav_stripe.h" />
+    <ClInclude Include="WICA\wav_codec\wci_wav_stripe_quant.h" />
+    <ClInclude Include="WICA\wav_codec\wci_wav_stripe_trans.h" />
+    <ClInclude Include="WICA\Wca3.h" />
+    <ClInclude Include="WICA\wci_codec.h" />
+    <ClInclude Include="WICA\wci_encoder.h" />
+    <ClInclude Include="WICA\wci_frame.h" />
+    <ClInclude Include="WICA\wci_global.h" />
+    <ClInclude Include="WICA\wci_portab.h" />
+    <ClInclude Include="WICA\wci_profile.h" />
+    <ClInclude Include="WICA\WICA3.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="WCADecoder.cpp" />
+    <ClCompile Include="WICA\compress\wci_huff_comperss.c" />
+    <ClCompile Include="WICA\compress\wci_huff_decompress.c" />
+    <ClCompile Include="WICA\compress\wci_huff_tabs.c" />
+    <ClCompile Include="WICA\compress\wci_qsp.c" />
+    <ClCompile Include="WICA\compress\wci_qsp_compress.c" />
+    <ClCompile Include="WICA\compress\wci_qsp_header.c" />
+    <ClCompile Include="WICA\compress\wci_qsp_stripe_decompress.c" />
+    <ClCompile Include="WICA\compress\wci_rle.c" />
+    <ClCompile Include="WICA\compress\wci_vlc.c" />
+    <ClCompile Include="WICA\debug_utils.c" />
+    <ClCompile Include="WICA\image\wci_color_space_in.c" />
+    <ClCompile Include="WICA\image\wci_color_space_out.c" />
+    <ClCompile Include="WICA\image\wci_color_space_table.c" />
+    <ClCompile Include="WICA\image\wci_image.c" />
+    <ClCompile Include="WICA\image\wci_image_component.c" />
+    <ClCompile Include="WICA\image\wci_image_convert.c" />
+    <ClCompile Include="WICA\utils\wci_emms.c" />
+    <ClCompile Include="WICA\utils\wci_mem_align.c" />
+    <ClCompile Include="WICA\wav_codec\wci_adpcm.c" />
+    <ClCompile Include="WICA\wav_codec\wci_lpc.c" />
+    <ClCompile Include="WICA\wav_codec\wci_wavelet.c" />
+    <ClCompile Include="WICA\wav_codec\wci_wav_block_dequant.c" />
+    <ClCompile Include="WICA\wav_codec\wci_wav_block_quant.c" />
+    <ClCompile Include="WICA\wav_codec\wci_wav_codec.c" />
+    <ClCompile Include="WICA\wav_codec\wci_wav_layer.c" />
+    <ClCompile Include="WICA\wav_codec\wci_wav_quant.c" />
+    <ClCompile Include="WICA\wav_codec\wci_wav_stripe.c" />
+    <ClCompile Include="WICA\wav_codec\wci_wav_stripe_quant.c" />
+    <ClCompile Include="WICA\wav_codec\wci_wav_stripe_trans.c" />
+    <ClCompile Include="WICA\Wca3.cpp" />
+    <ClCompile Include="WICA\wci_codec.c" />
+    <ClCompile Include="WICA\wci_encoder.c" />
+    <ClCompile Include="WICA\wci_frame.c" />
+    <ClCompile Include="WICA\wci_profile.c" />
+    <ClCompile Include="WICA\wci_stripe_decoder.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
