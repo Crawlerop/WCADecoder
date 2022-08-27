@@ -68,7 +68,7 @@ int main(int argc, char *argv[])
 		png_ihdr.color_type = SPNG_COLOR_TYPE_TRUECOLOR_ALPHA;
 	}
 
-	for (int c = 0; c <= WICAInterface->GetFrameNum(); c++) {
+	for (int c = 0; c < WICAInterface->GetFrameNum(); c++) {
 		WICAInterface->Decode(c);
 		//std::cout << WICAInterface->GetDelay() << "\n";
 		if (out_type == 0) {
